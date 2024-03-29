@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site bolado</title>
+    <link rel="icon" href="img/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+    <style>
+      body{
+        background-color: #d8d6d6; /* Light Gray */
+      }
+      footer{
+        background-color: #aa5656; /* Light Gray */
+        color: #333; /* Dark Gray */
+      }
+      .container {
+        padding: 0px;
+        border-radius: 5px;
+        
+        color: #333; /* Dark Gray */
+      }
+      nav{
+        margin: 0;
+        background-color: #aa5656; /* Light Gray */
+        color: #333; /* Dark Gray */
+      }
+
+      h5 {
+        text-align: center;
+        
+        color: #007bff; /* Blue */
+      }
+      
+      .logo_redes img {
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper container">
+          <a href="#" class="brand-logo"
+            ><i class="tiny material-icons">all_inclusive</i>Octavio</a
+          >
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/newsletter">Newsletter</a></li>
+            <li>
+              <a href="/login" class="waves-effect waves-light btn-small"
+                >Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- o conteúdo do site será inserido abaixo -->
+    {% block conteudo %} {% endblock %}
+    <!-- RODAPÉ -->
+    <footer class=>
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Zikão</h5>
+            <p class="grey-text text-lighten-4">Um site zika</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h6 class="white-text">Acesse nossas redes sociais</h6>
+            <ul>
+              <li class="logo_redes">
+                <img src="static/img/logo_facebook.png" alt="" />
+                <img src="/static/img/logo_instagran.png" alt="" />
+                <img src="static/img/logo_twitter.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2024 - Desenvolvido por Octavio Augusto
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>

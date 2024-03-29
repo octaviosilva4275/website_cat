@@ -1,0 +1,29 @@
+{% extends "template.html" %}
+{% block conteudo %}
+
+<div class=" row container">
+        <div class="valign-wrapper">
+          <div class="">
+            <h5>O Portal Secreto para o Mundo dos gatos!</h5>
+            <h6>Prepare-se para uma dose infinita de fofura e aventura peluda!</h6>
+          </div>
+          <div class="col s4 banner">
+            <img src="{{imagens}}" alt="" class="circle responsive-img right ">
+          </div>
+        </div>
+        <br>
+        <!--Curiosidade-->
+        <div class="row">
+          <div class="col s10 offset-s1">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">CURIOSIDADE DO DIA</span>
+                <p>{{frases}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+{% endblock %}

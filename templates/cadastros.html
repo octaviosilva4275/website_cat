@@ -1,0 +1,47 @@
+{% extends "template.html" %}
+{% block conteudo %}
+
+    <style>
+      
+
+      .logo_redes,img{
+        height: 40px;
+      }
+
+    </style>
+
+    <title>GodoInfinit</title>
+</head>
+<body>
+    <!--Menu-->
+
+      <br>
+
+
+
+
+
+
+<div class="container center">
+    <h3>E-mails Cadastrados</h3>
+      <table class="centered highlight grey darken-1">
+            <thead class="grey darken-2">
+              <tr>
+                  <th>E-mail</th>
+              </tr>
+            </thead>
+            <tbody>
+                {% for cadastro in cadastrados %}
+              <tr>
+                <td>{{cadastro}}</td>
+              </tr>
+                {% endfor %}
+
+            </tbody>
+      </table>
+</div>
+
+
+
+
+{% endblock %}

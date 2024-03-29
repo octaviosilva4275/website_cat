@@ -1,0 +1,41 @@
+{% extends "template.html" %} {% block conteudo %}
+<style>
+  .container {
+    padding: 0px;
+
+    color: #333; /* Dark Gray */
+  }
+  h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue */
+  }
+  span {
+    color: #666; /* Dark Gray */
+  }
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Light Gray */
+    margin-bottom: 10px;
+  }
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+
+<div class="container">
+  <div class="center">
+    <h4>Receba nossas atualizações</h4>
+    <span>{{campo_resultado2}}</span>
+  </div>
+  <!-- Restante do conteúdo... -->
+</div>
+{% endblock %}
